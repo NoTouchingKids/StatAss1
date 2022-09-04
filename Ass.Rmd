@@ -1,0 +1,45 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+
+```
+
+
+##    Executive summary
+
+##    Introduction
+
+##    Methodology
+
+```{r}
+houseprices <- read.delim("houseprices.txt")
+houseprices$Baths <- as.factor(houseprices$Baths)
+houseprices$Bedrooms <- as.factor(houseprices$Bedrooms)
+houseprices$Fireplace <- as.factor(houseprices$Fireplace)
+```
+
+
+
+Inisital summary of data
+```{r}
+summary(houseprices)
+```
+# graphs of Data
+ 
+
+
+
+##    Results
+
+##    References
+
+##    Appendix
